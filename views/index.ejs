@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title || 'WeatherApp' %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>WeatherApp</h1>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <form class="search-form" action="/" method="get">
+      <input
+        type="text"
+        name="location"
+        value="<%= location %>"
+        placeholder="City or City,State"
+        required
+      />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <h2><%= title %></h2>
+
+    <% if (error) { %>
+      <div class="card"><p class="error-message"><%= error %></p></div>
+    <% } else if (current) { %>
+      <div class="card">
+        <p><strong>Temp:</strong> <%= current.temp %> °C</p>
+        <p><strong>Feels like:</strong> <%= current.feels_like %> °C</p>
+        <p><strong>Conditions:</strong> <%= current.description %></p>
+        <img
+          src="http://openweathermap.org/img/wn/<%= current.icon %>@2x.png"
+          alt="<%= current.description %>"
+        />
+      </div>
+    <% } %>
+  </main>
+
+  <footer>
+    <small>
+      © <%= new Date().getFullYear() %> WeatherApp —
+      <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
+    </small>
+  </footer>
+</body>
+</html>
