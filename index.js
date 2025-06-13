@@ -5,7 +5,7 @@ import express from "express";
 import axios from "axios";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 const KEY = process.env.OPENWEATHER_KEY;
 const NEWS_KEY = process.env.NEWSAPI_KEY;
 
