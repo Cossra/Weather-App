@@ -1,6 +1,6 @@
 # WeatherApp
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/weather-app/ci.yml?branch=main)](https://github.com/yourusername/weather-app/actions) [![npm version](https://img.shields.io/npm/v/weather-app)](https://www.npmjs.com/package/weather-app) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![OpenWeather](https://img.shields.io/badge/API-OpenWeather-2ecc71)](https://openweathermap.org/api) [![Demo](https://img.shields.io/badge/Live%20Demo-View-brightgreen)](https://weather-app-demo.example.com)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)](https://github.com/robertcoss/weather-app/blob/main/package.json#L3)[![npm version](https://img.shields.io/npm/v/weather-app)](https://www.npmjs.com/package/weather-app) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![OpenWeather](https://img.shields.io/badge/API-OpenWeather-2ecc71)](https://openweathermap.org/api) [![Demo](https://img.shields.io/badge/Live%20Demo-View-brightgreen)](https://weather-app-demo.example.com)
 
 A simple, responsive weather application built with Node.js, Express, EJS, and the OpenWeather API. Provides current temperature, feels-like temperature, and weather conditions for any city.
 
